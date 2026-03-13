@@ -27,7 +27,7 @@ Desde la carpeta del proyecto:
 ```bash
 cd AUTO_FRONT_POM_FACTORY
 chmod +x gradlew
-./gradlew clean test
+./gradlew clean test aggregate
 ```
 
 El proyecto está configurado para generar reportes automáticamente al final de `test`.
