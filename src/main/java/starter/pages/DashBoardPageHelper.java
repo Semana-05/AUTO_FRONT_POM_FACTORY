@@ -16,6 +16,8 @@ public class DashBoardPageHelper {
         return dashBoardPage.getTicketPriorityElements()
                 .stream()
                 .map(WebElement::getText)
+                .map(String::trim)
+                .filter(text -> !text.isEmpty())
                 .collect(Collectors.toList());
     }
 }
